@@ -7,14 +7,10 @@
         <methods>
           <include name="S1Assertion2"/>
           <include name="S2Assertion3"/>
-          <include name="S1Assertion1"/>
           <include name="S1Assertion3"/>
-          <include name="scenario_two"/>
           <include name="done"/>
           <include name="S2Assertion2"/>
-          <include name="S2Assertion1"/>
           <include name="setUpTest"/>
-          <include name="scenario_one"/>
         </methods>
       </class> <!-- tests.task4Test -->
     </classes>

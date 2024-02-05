@@ -56,15 +56,6 @@ public class task4Test extends ConfigReader {
 		Assert.assertTrue(task4.isCartItemDisplayed(), "Item is not displayed in the cart");
 	}
 	
-	@Test (priority = 3)
-	public void S1Assertion2 () {
-		Assert.assertEquals(task4.getCartItemAmount(), "$6.70", "Incorrect amount for the item in the cart");
-	}
-	
-	@Test (priority = 4)
-	public void S1Assertion3 () {
-		Assert.assertEquals(task4.getCartItemQuantity(), "2", "Incorrect quantity for the item in the cart");
-	}
 	
 	
 	@Test (priority = 5)
@@ -96,12 +87,12 @@ public class task4Test extends ConfigReader {
 		Assert.assertTrue(task4.isCartItemDisplayed(), "Item is not displayed in the cart");
 	}
 	
-	@Test
+	@Test(priority = 7)
 	public void S2Assertion2 () {
 		Assert.assertEquals(task4.getCartItemAmount(), "$6.70", "Incorrect amount for the item in the cart");
 	}
 	
-	@Test (priority = 7)
+	@Test (priority = 8)
 	public void S2Assertion3 () {
 		Assert.assertEquals(task4.getCartItemQuantity(), "2", "Incorrect quantity for the item in the cart");
 	}

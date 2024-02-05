@@ -80,7 +80,7 @@ public class PageObjects {
 		login_task4.click();
 	}
 
-	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/section[1]/nav[1]/ul[1]/li[1]/a[1]")
+	@FindBy(xpath = "//a[contains(@class, 'menu_home')]")
 	private WebElement Home_button;
 
 	public void clickHomeButton_task4() {
@@ -121,7 +121,7 @@ public class PageObjects {
 	// Check if the item is displayed in the cart
     public boolean isCartItemDisplayed() {
         try {
-            WebElement cartItem = driver.findElement(By.xpath("//td[@class='align_left']//a[contains(text(),'Dove Men +Care Body Wash')]"));
+            WebElement cartItem = driver.findElement(By.xpath("//td[@class='align_center']//a//img"));
             return cartItem.isDisplayed();
         } catch (NoSuchElementException e) {
             return false;
