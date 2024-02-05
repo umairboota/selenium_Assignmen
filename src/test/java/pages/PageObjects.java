@@ -130,7 +130,7 @@ public class PageObjects {
     
  // Get the amount for the item in the cart
     public String getCartItemAmount() {
-        WebElement amountElement = driver.findElement(By.xpath("(//td[@class='align_right'][normalize-space()='$6.70'])[2]"));
+        WebElement amountElement = driver.findElement(By.xpath("//tbody/tr[2]/td[6]"));
         return amountElement.getText();
     }
 

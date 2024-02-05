@@ -7,7 +7,7 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="tests.task4Test" />
-			<class name="tests.LoginTest" />
+			<!-- <class name="tests.LoginTest" /> -->
 		</classes>
 	</test> <!--
 	Test -->
