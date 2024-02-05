@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-05T18:28:14 PKT" name="Surefire suite" finished-at="2024-02-05T18:29:05 PKT" duration-ms="51193">
+    <groups>
+    </groups>
+    <test started-at="2024-02-05T18:28:14 PKT" name="Surefire test" finished-at="2024-02-05T18:29:05 PKT" duration-ms="51193">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tests.LoginTest@bef2d72]" started-at="2024-02-05T18:28:14 PKT" name="setUpTest" finished-at="2024-02-05T18:28:15 PKT" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="loginTest()[pri:1, instance:tests.LoginTest@bef2d72]" started-at="2024-02-05T18:28:15 PKT" name="loginTest" finished-at="2024-02-05T18:28:27 PKT" duration-ms="11427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTestInvalid()[pri:2, instance:tests.LoginTest@bef2d72]" started-at="2024-02-05T18:28:27 PKT" name="loginTestInvalid" finished-at="2024-02-05T18:28:37 PKT" duration-ms="10191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestInvalid -->
+        <test-method is-config="true" signature="done()[pri:0, instance:tests.LoginTest@bef2d72]" started-at="2024-02-05T18:28:37 PKT" name="done" finished-at="2024-02-05T18:28:37 PKT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.task4Test">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tests.task4Test@49b0b76]" started-at="2024-02-05T18:28:37 PKT" name="setUpTest" finished-at="2024-02-05T18:28:41 PKT" duration-ms="3873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="scenario_one()[pri:1, instance:tests.task4Test@49b0b76]" started-at="2024-02-05T18:28:41 PKT" name="scenario_one" finished-at="2024-02-05T18:28:53 PKT" duration-ms="12113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario_one -->
+        <test-method signature="S1Assertion1()[pri:2, instance:tests.task4Test@49b0b76]" started-at="2024-02-05T18:28:53 PKT" name="S1Assertion1" finished-at="2024-02-05T18:28:53 PKT" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- S1Assertion1 -->
+        <test-method signature="scenario_two()[pri:5, instance:tests.task4Test@49b0b76]" started-at="2024-02-05T18:28:53 PKT" name="scenario_two" finished-at="2024-02-05T18:29:05 PKT" duration-ms="11911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario_two -->
+        <test-method signature="S2Assertion1()[pri:6, instance:tests.task4Test@49b0b76]" started-at="2024-02-05T18:29:05 PKT" name="S2Assertion1" finished-at="2024-02-05T18:29:05 PKT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- S2Assertion1 -->
+        <test-method is-config="true" signature="done()[pri:0, instance:tests.task4Test@49b0b76]" started-at="2024-02-05T18:29:05 PKT" name="done" finished-at="2024-02-05T18:29:05 PKT" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- tests.task4Test -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

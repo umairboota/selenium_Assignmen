@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -9,6 +10,7 @@ import pages.PageObjects;
 public class LoginTest extends ConfigReader {
 
     private PageObjects loginPage;
+
 
     @BeforeClass
     public void setUpTest() {
@@ -53,9 +55,14 @@ public class LoginTest extends ConfigReader {
         loginPage.clickLoginButton();
         loginPage.pauseForView(5000);
         
-        loginPage.quitWindow();
         
     }
+    
+    @AfterClass
+	public void done() {
+    	loginPage.quitWindow();
+
+	}
     
     
 }

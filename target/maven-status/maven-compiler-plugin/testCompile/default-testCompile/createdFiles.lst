@@ -1,0 +1,6 @@
+utils\ExtentReportManager.class
+config\ConfigReader.class
+utils\DBManager.class
+tests\LoginTest.class
+tests\task4Test.class
+pages\PageObjects.class
