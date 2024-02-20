@@ -22,10 +22,8 @@ public class task4Test extends ConfigReader {
 
 	@Test(priority = 1)
 	public void scenario_one() {
-		task4.pauseForView(2000);
 
 		task4.clickManueButton();
-		task4.pauseForView(2000);
 
 		String username = getUsername_task4();
 		String password = getPassword_task4();
@@ -44,10 +42,8 @@ public class task4Test extends ConfigReader {
 		task4.selectOptionFromDropdown(option);
 
 		task4.clickAddtoCart();
-		task4.pauseForView(2000);
 
 		task4.gotTocart();
-		task4.pauseForView(2000);
 
 	}
 	
@@ -88,7 +84,6 @@ public class task4Test extends ConfigReader {
 		task4.enterQuntity();
 		task4.clickAddtoCart();
 		
-		task4.pauseForView(2000);
 	}
 	
 	@Test (priority = 6)

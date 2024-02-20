@@ -43,13 +43,7 @@ public class PageObjects {
 		driver.quit();
 	}
 
-	public void pauseForView(int x) {
-		try {
-			Thread.sleep(x);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
+	
 
 //	OBJECTModels for task4 ------ S1
 	@FindBy(xpath = "//a[normalize-space()='Login or register']")

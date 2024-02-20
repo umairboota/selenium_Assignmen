@@ -29,11 +29,9 @@ public class LoginTest extends ConfigReader {
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
         
-        loginPage.pauseForView(5000);
 
         loginPage.clickLoginButton();
 
-        loginPage.pauseForView(5000);
 
         
     }
@@ -50,10 +48,8 @@ public class LoginTest extends ConfigReader {
 
         loginPage.enterUsername(username);
         loginPage.enterPassword(password +"invalid");
-        loginPage.pauseForView(5000);
 
         loginPage.clickLoginButton();
-        loginPage.pauseForView(5000);
         
         
     }
