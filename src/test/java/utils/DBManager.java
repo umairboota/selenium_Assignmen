@@ -1,43 +1,68 @@
 package utils;
 
-import java.beans.Statement;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.Statement;
 
 public class DBManager {
+// Connection object
+	static Connection con = null;
+// Statement object
+	private static Statement stmt;
+// Constant for Database URL
+	public static String DB_URL = "jdbc:mysql://localhost:3306/test";
+//Database Username
+	public static String DB_USER = "root";
+// Database Password
+	public static String DB_PASSWORD = "sqlpassword@123";
+	// Database connection parameters
+//    String url = "jdbc:mysql://localhost:3306/mysql";
+//    String username = "root";
+//    String password = "sqlpassword@123";
 
-	public static void main(String[] args) {
-        // Database connection parameters
-        String url = "jdbc:mysql://localhost:3306/mysql";
-        String username = "root";
-        String password = "sqlpassword@123";
+	@BeforeTest
+	public void setUp() throws Exception {
+		try {
+// Database connection
+			String dbClass = "com.mysql.cj.jdbc.Driver";
+			Class.forName(dbClass).newInstance();
+// Get connection to DB
+			Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+// Statement object to send the SQL statement to the Database
+			stmt = con.createStatement();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
-        // JDBC objects
-        Statement statement = null;
-        ResultSet resultSet = null;
-
-            // Establish the database connection
-        	Connection connection;
-			try {
-				connection = DriverManager.getConnection(url, username, password);
-				if(connection.isClosed()) {
-					System.out.println("False");
-	            	
-            	}
-				else{
-					System.out.println("true");
-				}
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+	@Test
+	public void test() {
+		try {
+			String query = "select * from employee_table";
+// Get the contents of userinfo table from DB
+			ResultSet res = stmt.executeQuery(query);
+// Print the result untill all the records are printed
+// res.next() returns true if there is any next record else returns false
+			while (res.next()) {
+				System.out.print(res.getString(1));
+				System.out.print(" " + res.getString(2));
+				System.out.print(" " + res.getString(3));
+				System.out.println(" " + res.getString(4));
 			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
-            
-            
-            
-        
-    }
-
+	@AfterTest
+	public void tearDown() throws Exception {
+// Close DB connection
+		if (con != null) {
+			con.close();
+		}
+	}
 }
