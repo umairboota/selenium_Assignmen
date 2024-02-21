@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 05 18:13:09 PKT 2024</td>
+<td>Started on:</td><td>Wed Feb 21 11:39:39 PKT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>53 seconds (53753 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1954 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,70 +76,54 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.task4Test.S2Assertion3()'><b>S2Assertion3</b><br>Test class: tests.task4Test</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;cart_quantity75&apos;]&quot;}
-  (Session info: chrome=121.0.6167.140)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92548ccbc8fbeedf4f8b700465952308, findElement {using=xpath, value=//input[@id=&apos;cart_quantity75&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UMAIR~1.BOO\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52552}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52552/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 92548ccbc8fbeedf4f8b700465952308
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at pages.PageObjects.getCartItemQuantity(PageObjects.java:139)
-	at tests.task4Test.S2Assertion3(task4Test.java:106)
+<td title='tests.task4Test.setUpTest()'><b>setUpTest</b><br>Test class: tests.task4Test</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1668004795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1668004795'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;cart_quantity75&apos;]&quot;}
-  (Session info: chrome=121.0.6167.140)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92548ccbc8fbeedf4f8b700465952308, findElement {using=xpath, value=//input[@id=&apos;cart_quantity75&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UMAIR~1.BOO\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52552}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52552/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 92548ccbc8fbeedf4f8b700465952308
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at pages.PageObjects.getCartItemQuantity(PageObjects.java:139)
-	at tests.task4Test.S2Assertion3(task4Test.java:106)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1570358965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1570358965'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:819)
 	at org.testng.TestRunner.run(TestRunner.java:619)
@@ -156,184 +140,35 @@ Session ID: 92548ccbc8fbeedf4f8b700465952308
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
 </pre></div></td>
-<td>10</td>
-<td>tests.task4Test@9d5509a</td></tr>
-<tr>
-<td title='tests.task4Test.S2Assertion2()'><b>S2Assertion2</b><br>Test class: tests.task4Test</td>
-<td><div><pre>java.lang.AssertionError: Incorrect amount for the item in the cart expected [$6.70] but found [$14.40]
-	at tests.task4Test.S2Assertion2(task4Test.java:101)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2144496344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2144496344'><pre>java.lang.AssertionError: Incorrect amount for the item in the cart expected [$6.70] but found [$14.40]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at tests.task4Test.S2Assertion2(task4Test.java:101)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.task4Test@9d5509a</td></tr>
-<tr>
-<td title='tests.task4Test.S1Assertion2()'><b>S1Assertion2</b><br>Test class: tests.task4Test</td>
-<td><div><pre>java.lang.AssertionError: Incorrect amount for the item in the cart expected [$7.20] but found [$14.40]
-	at tests.task4Test.S1Assertion2(task4Test.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace555740147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace555740147'><pre>java.lang.AssertionError: Incorrect amount for the item in the cart expected [$7.20] but found [$14.40]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at tests.task4Test.S1Assertion2(task4Test.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.task4Test@9d5509a</td></tr>
-<tr>
-<td title='tests.task4Test.S1Assertion3()'><b>S1Assertion3</b><br>Test class: tests.task4Test</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;cart_quantity75&apos;]&quot;}
-  (Session info: chrome=121.0.6167.140)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92548ccbc8fbeedf4f8b700465952308, findElement {using=xpath, value=//input[@id=&apos;cart_quantity75&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UMAIR~1.BOO\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52552}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52552/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 92548ccbc8fbeedf4f8b700465952308
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at pages.PageObjects.getCartItemQuantity(PageObjects.java:139)
-	at tests.task4Test.S1Assertion3(task4Test.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1421650289", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1421650289'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;cart_quantity75&apos;]&quot;}
-  (Session info: chrome=121.0.6167.140)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92548ccbc8fbeedf4f8b700465952308, findElement {using=xpath, value=//input[@id=&apos;cart_quantity75&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UMAIR~1.BOO\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52552}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52552/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 92548ccbc8fbeedf4f8b700465952308
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at pages.PageObjects.getCartItemQuantity(PageObjects.java:139)
-	at tests.task4Test.S1Assertion3(task4Test.java:66)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>10</td>
+<td>1</td>
 <td>tests.task4Test@9d5509a</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.task4Test.done()'><b>done</b><br>Test class: tests.task4Test</td>
+<td></td>
+<td>0</td>
+<td>tests.task4Test@9d5509a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -342,23 +177,311 @@ Session ID: 92548ccbc8fbeedf4f8b700465952308
 </tr>
 <tr>
 <td title='tests.task4Test.S2Assertion1()'><b>S2Assertion1</b><br>Test class: tests.task4Test</td>
-<td></td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace442205321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace442205321'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
+</pre></div></td>
 <td>0</td>
 <td>tests.task4Test@9d5509a</td></tr>
 <tr>
 <td title='tests.task4Test.S1Assertion1()'><b>S1Assertion1</b><br>Test class: tests.task4Test</td>
-<td></td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1852821063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1852821063'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
+</pre></div></td>
+<td>0</td>
+<td>tests.task4Test@9d5509a</td></tr>
+<tr>
+<td title='tests.task4Test.scenario_two()'><b>scenario_two</b><br>Test class: tests.task4Test</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1204178174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1204178174'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
+</pre></div></td>
 <td>0</td>
 <td>tests.task4Test@9d5509a</td></tr>
 <tr>
 <td title='tests.task4Test.scenario_one()'><b>scenario_one</b><br>Test class: tests.task4Test</td>
-<td></td>
-<td>13</td>
-<td>tests.task4Test@9d5509a</td></tr>
-<tr>
-<td title='tests.task4Test.scenario_two()'><b>scenario_two</b><br>Test class: tests.task4Test</td>
-<td></td>
-<td>15</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181567472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1181567472'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at config.ConfigReader.initializeDriver(ConfigReader.java:74)
+	at config.ConfigReader.initializeWebDriver(ConfigReader.java:62)
+	at config.ConfigReader.setUp(ConfigReader.java:26)
+	at tests.task4Test.setUpTest(task4Test.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 36 more
+</pre></div></td>
+<td>0</td>
 <td>tests.task4Test@9d5509a</td></tr>
 </table><p>
 </body>

@@ -8,6 +8,7 @@
 		<classes>
 			<class name="tests.task4Test" />
 			<!-- <class name="tests.LoginTest" /> -->
+		<!--	<class name="tests.DBTest"></class> -->
 		</classes>
 	</test> <!--
 	Test -->

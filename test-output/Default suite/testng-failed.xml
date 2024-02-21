@@ -3,20 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.task4Test">
+      <class name="tests.LoginTest">
         <methods>
-          <include name="S1Assertion2"/>
-          <include name="S1Assertion1"/>
-          <include name="S2Assertion3"/>
-          <include name="S1Assertion3"/>
-          <include name="scenario_two"/>
+          <include name="loginTestInvalid"/>
           <include name="done"/>
-          <include name="S2Assertion2"/>
-          <include name="S2Assertion1"/>
           <include name="setUpTest"/>
-          <include name="scenario_one"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- tests.task4Test -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

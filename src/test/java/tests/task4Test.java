@@ -12,7 +12,7 @@ public class task4Test extends ConfigReader {
 	public PageObjects task4;
 
 	@BeforeClass
-	public void setUpTest() {
+	private void setUpTest() {
 		setUp();
 		task4 = new PageObjects(getDriver());
 		getDriver().get(getBaseUrl2());

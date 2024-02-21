@@ -31,9 +31,7 @@ public class LoginTest extends ConfigReader {
         
 
         loginPage.clickLoginButton();
-
-
-        
+     
     }
     
  // case 2 - invalid credentials password from the config file
